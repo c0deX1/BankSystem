@@ -1,0 +1,2 @@
+start C:\"Program Files"\Java\jre1.8.0_181\bin\java.exe -jar %~dp0\out\artifacts\TestTask_jar\TestTask.jar "C:\Users\sizv1\IdeaProjects\TestTask\bank1\Accounts.txt"
+start C:\"Program Files"\Java\jre1.8.0_181\bin\java.exe -jar %~dp0\out\artifacts\TestTask_jar\TestTask.jar "C:\Users\sizv1\IdeaProjects\TestTask\bank2\Accounts.txt"
