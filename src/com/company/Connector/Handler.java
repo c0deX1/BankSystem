@@ -26,7 +26,7 @@ public class Handler extends Thread {
         DataInputStream dis = new DataInputStream(socket.getInputStream());
         String message = dis.readUTF();
 
-        if (message.contains("cash") && !message.contains("errorMessage")) {
+        if (message.contains("amount") && !message.contains("errorMessage")) {
             PaymentDocumentRq request = new ObjectMapper().readValue(message, PaymentDocumentRq.class);
             System.out.println("Запрос из другого банка");
             PaymentDocumentRs response = new IBankControllerImpl(new IAccountRepositoryImpl()).paymentDocumentRqProcess(request, true);
